@@ -1,4 +1,7 @@
-/* esp32_tft_UI_design  by Shinjia  v0.1  2023/07/25 */
+/* esp32_tft_UI_design  by Shinjia
+  - v0.2  2023/12/12
+  - v0.1  2023/07/25
+*/
 
 #include "graphics_0.h"
 #include "graphics_1.h"
@@ -14,10 +17,10 @@
 #include "Adafruit_ILI9341.h"
 
 #define TFT_DC   21
-#define TFT_CS   22
+#define TFT_CS   17
 #define TFT_MOSI 23
 #define TFT_CLK  18
-#define TFT_RST   5
+#define TFT_RST  22
 #define TFT_MISO 19
 
 Adafruit_ILI9341 tft = Adafruit_ILI9341(TFT_CS, TFT_DC, TFT_MOSI, TFT_CLK, TFT_RST, TFT_MISO);
